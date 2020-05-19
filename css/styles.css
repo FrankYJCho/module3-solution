@@ -1,0 +1,138 @@
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: lightgray;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav{
+
+  background-color: gray;
+  border: 0;
+  border-radius: 0;
+
+}
+
+.navbar-brand {
+  padding-top: 30px;
+  height: 100px;
+  border: 0;
+}
+
+.navbar-brand h1 {
+  color: #240611;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 0.75;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  text-align: center;
+  color: black;
+}
+
+#nav-list a:hover {
+  color: white;
+  background:#240611;
+
+}
+
+#nav-list a span{
+  font-size: 1.5em;
+
+}
+
+.navbar-header button.nav-toggle, .navbar-header .icon-bar {
+  border: 1px solid darkgray;
+
+}
+
+/* END HEADER */
+
+
+/* HOME PAGE */
+
+#chicken-tile, #beef-tile, #sushi-tile {
+
+  height:350px;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative; /* for children positioning */
+  border: 3px solid darkgray;
+  border-radius: 5px;
+  overflow: auto;
+  background-color: gray;
+
+}
+
+#chicken-tile span, #beef-tile span, #sushi-tile span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 10%;
+  text-align: center;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  background-color: #240611;
+  color: white;
+  opacity: .7;
+
+}
+
+#chicken-tile p, #beef-tile p, #sushi-tile p {
+  margin: 50px 20px auto 20px ;
+  color: black;
+}
+#chicken-tile a, #beef-tile a, #sushi-tile a {
+  margin: 10px 20px auto 20px ;
+  color: blue;
+}
+
+/* HOME PAGE ENDS */
+
+/** Media Quary Large Devices **/
+@media (min-width:1200px) {
+
+}
+
+/** Media Quary Medium Devices **/
+@media (min-width:992px) and (max-width:1199px) {
+  #chicken-tile p, #beef-tile p, #sushi-tile p {
+    font-size: .95em;
+  }
+}
+
+/** Media Quary Small Devices **/
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+/** Media Quary Xsmall Devices **/
+@media (max-width:767px) {
+  .navbar-brand {
+    padding-top: 20px;
+    height: 90px;
+  }
+  .navbar-brand h1 {
+    font-size: 5vw;
+  }
+
+  #nav-list {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  #nav-list a span{
+    font-size: 0.9em;
+
+  }
+
+}
